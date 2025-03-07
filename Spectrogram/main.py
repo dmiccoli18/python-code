@@ -23,7 +23,7 @@ def Spectrogram(x, Fs, overlap, step, N_start, NNstep):
 
     spec = np.flip(spec.copy(), axis=0)
 
-    # plot stuff
+    # plot initialization
     tVec = np.linspace(0, dt, int((N * dt)), endpoint=False)
     fVec = np.linspace(0, df, int(Fs / 2), endpoint=False)
 
@@ -35,7 +35,7 @@ def Spectrogram(x, Fs, overlap, step, N_start, NNstep):
     plt.show()
 
 
-# Press the green button in the gutter to run the script.
+# main script run
 if __name__ == '__main__':
     Fs, x = wav.read('./V0_LFM15K.wav')
     dt = 1 / Fs
