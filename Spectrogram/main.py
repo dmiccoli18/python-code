@@ -1,4 +1,4 @@
-# This is a sample Python script.
+# This is a python script to generate a spectrogram for an input file
 import numpy as np
 import scipy.io.wavfile as wav
 import matplotlib.pyplot as plt
